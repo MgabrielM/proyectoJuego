@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .encabezado {
   width: 100%;
   height: 100px;
@@ -39,7 +44,7 @@
 }
 .inicio .inicio-contenedor {
   width: 90%;
-  height: 300px;
+  height: auto;
   border: 1px solid black;
 }
 
@@ -53,28 +58,30 @@
   align-items: center;
 }
 
-.juego-contenedor {
-  width: 100vw;
-  height: 100vh;
+.juego-contenedor .encabezado {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+}
+.juego-contenedor .grupo-botones {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
-.juego-contenedor .izquierda {
-  width: 50VW;
-  height: 100%;
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.juego-contenedor .grupo-botones .boton-dimension {
+  width: 48%;
+  height: 90%;
+  border-radius: 15px;
 }
-.juego-contenedor .derecha {
+.juego-contenedor .grupo-botones .boton-izquierdo {
   background-color: blue;
-  width: 50VW;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.juego-contenedor .grupo-botones .boton-derecho {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
